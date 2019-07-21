@@ -1,0 +1,86 @@
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "fonts.scss";
+
+.header {
+  background: url(/images/head-bg.png);
+  position: relative;
+  background-size: cover;
+
+  &__hamburger {
+    @include mobile {
+
+      padding-top: 50px;
+    }
+
+    &--item {
+      @include hamburger(18px);
+      display: none;
+
+      &:hover {
+        background: $white;
+
+      }
+
+      @include mobile {
+        display: flex;
+        border: 1px solid $white;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background: $white;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
+        span {
+          background: $black;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__head_text_block {
+    padding-bottom: 148px;
+  }
+
+  &__image {
+
+    &--content {
+      width: 100%;
+      position: absolute;
+    }
+
+    &--block {
+      position: relative;
+      @include mobile {
+        display: none;
+      }
+      //@include tablet-only {
+      //  display: none;
+      //}
+    }
+  }
+
+  &__head {
+    @include Text-Style;
+    margin-bottom: 16px;
+    margin-top: 80px;
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+
+  &__sub_head {
+    @include Text-Style-2;
+    margin-bottom: 14px;
+
+  }
+
+  &__description {
+    @include Text-Style-4;
+
+  }
+}
+

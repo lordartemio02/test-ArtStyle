@@ -1,0 +1,155 @@
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "fonts.scss";
+
+.products {
+  @include mobile {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  padding-bottom: 66px;
+
+  &__header {
+    @include Text-Style-26;
+    margin: 73px auto 63px;
+  }
+
+  &__item {
+    border: solid 1px #e3e3e3;
+    background-color: $white;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    @include mobile {
+      margin-left: 0px;
+      margin-bottom: 14px;
+    }
+
+    &:hover {
+      transition: .3s ease;
+      box-shadow: 0px 28px 57px 0 rgba(0, 0, 0, 0.3);
+      position: initial;
+      transform: scale(1.05);
+    }
+
+    &:hover &--button {
+      @include Text-Style-16;
+      transition: .3s ease;
+      background-color: $dark-mint;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--header {
+      @include Text-Style-8;
+      margin-top: 19px;
+    }
+
+    &--image {
+      margin-top: 32px;
+      margin-bottom: 27px;
+
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        width: 142px;
+        height: 154px;
+      }
+    }
+
+    &--price {
+      @include Text-Style-10;
+
+    }
+
+    &--description {
+      @include Text-Style-9;
+      margin-bottom: 18px;
+      margin-top: 18px;
+    }
+
+    &--counter-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--pcs {
+      // opacity: 0.7;
+      margin-left: 14px;
+      @include Text-Style-14;
+    }
+
+    &--button {
+      @include Text-Style-15;
+      border-radius: 19.5px;
+      border: solid 3px $dark-mint;
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto 30px;
+      text-transform: uppercase;
+      width: calc(100% - 40px);
+      cursor: pointer;
+
+      &:hover {
+        transition: .3s ease;
+        @include Text-Style-16;
+        background-color: $dark-mint;
+      }
+
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__counter {
+    max-width: 100px;
+    opacity: 0.8;
+    display: flex;
+    border-radius: 15px;
+    border: solid 1px #cfcfcf;
+    background-color: $white;
+
+    &--symbol {
+      @include Text-Style-12;
+      background: transparent;
+      box-shadow: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &.minus {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+        padding-left: 14px;
+      }
+
+      &.plus {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding-right: 11px;
+      }
+
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+
+    &--input {
+      @include Text-Style-11;
+      border: 1px solid transparent;
+      width: auto;
+      max-width: 30px;
+      text-align: center;
+
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+  }
+}

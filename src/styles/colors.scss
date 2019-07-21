@@ -1,0 +1,21 @@
+$white: #ffffff;
+$light-greenish-blue: #69f8b6;
+$black: #282828;
+$tangerine: #ff9000;
+$black-two: #171717;
+$dark-mint: #43cb83;
+$slate-grey: #515461;
+$black-70: rgba(44, 44, 44, 0.7);
+$black-two-70: rgba(28, 27, 27, 0.7);
+
+:root {
+  --white: $white;
+  --light-greenish-blue: $light-greenish-blue;
+  --black: $black;
+  --tangerine: $tangerine;
+  --black-two: $black-two;
+  --dark-mint: $dark-mint;
+  --slate-grey: $slate-grey;
+  --black-70: $black-70;
+  --black-two-70: $black-two-70;
+}

@@ -1,0 +1,223 @@
+@import "./colors.scss";
+
+@mixin Text-Style {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-18 {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: $black-two;
+}
+
+@mixin Text-Style-10 {
+  font-family: Montserrat;
+  font-size: 29px;
+  font-weight: 900;
+  text-align: center;
+  color: $slate-grey;
+}
+
+@mixin Text-Style-21 {
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.69;
+  letter-spacing: 0.68px;
+  text-align: center;
+  color: $dark-mint;
+}
+
+@mixin Text-Style-7 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.02;
+  text-align: center;
+  color: $black;
+}
+
+@mixin Text-Style-20 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: $black;
+}
+
+@mixin Text-Style-3 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-2 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.54;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-8 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.02;
+  text-align: center;
+  color: $black;
+}
+
+@mixin Text-Style-22 {
+  font-family: Lato;
+  font-size: 24px;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-12 {
+  font-family: Myriad Pro;
+  font-size: 23px;
+  line-height: 0.78;
+  text-align: left;
+  color: $black;
+}
+
+@mixin Text-Style-19 {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: left;
+  color: $black;
+}
+
+@mixin Text-Style-23 {
+  font-family: Lato;
+  font-size: 22px;
+  line-height: 1.59;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-16 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.28;
+  text-align: center;
+  color: $black;
+}
+
+@mixin Text-Style-24 {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-5 {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.56;
+  letter-spacing: 0.45px;
+  text-align: left;
+  color: $dark-mint;
+}
+
+@mixin Text-Style-15 {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.42;
+  text-align: center;
+  color: $black-70;
+}
+
+@mixin Text-Style-6 {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  letter-spacing: 0.45px;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-4 {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-17 {
+  font-family: Lato;
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1.46;
+  text-align: center;
+  color: $black-70;
+}
+
+@mixin Text-Style-13 {
+  font-family: MyriadPro;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  text-align: left;
+  color: $black;
+}
+
+@mixin Text-Style-25 {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-9 {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $black;
+}
+
+@mixin Text-Style-11 {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: left;
+  color: $black;
+}
+
+@mixin Text-Style-14 {
+  font-family: HelveticaNeueCyr-Roman;
+  font-size: 12px;
+  text-align: left;
+  color: $black-two-70;
+}
+
+@mixin Text-Style-26 {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: $black;
+}

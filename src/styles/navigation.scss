@@ -1,0 +1,40 @@
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "fonts.scss";
+
+.navigation {
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__link {
+    @include Text-Style-6;
+    padding: 0 43px;
+    height: 52px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 26px;
+
+    @include mobile {
+      justify-content: center;
+      width: 100%;
+
+    }
+
+    &:hover {
+      box-shadow: 0px 10px 37px 0 rgba(0, 0, 0, 0.21);
+      background-color: $white;
+      @include Text-Style-5;
+      transition: .3s ease;
+    }
+  }
+
+  @include mobile {
+    display: none;
+    &.is-active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

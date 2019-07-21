@@ -1,0 +1,119 @@
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "fonts.scss";
+
+.footer {
+  background: url(./images/footer-bg.jpg);
+  background-size: cover;
+  padding: 0;
+  position: relative;
+
+  &__wall {
+    height: calc(100% + 138px);
+    position: absolute;
+    left: 0;
+    top: -138px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet-only {
+      display: none;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43px;
+
+    &--item {
+      @include Text-Style-23;
+
+      strong {
+        @include Text-Style-23;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+
+    flex-direction: row;
+
+    &--item {
+      border: solid 1px $white;
+      height: 57px;
+      width: 57px;
+      border-radius: 100%;
+      margin-left: 40px;
+      align-items: center;
+      justify-content: space-around;
+      display: flex;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      svg {
+
+        path {
+          fill: $white;
+        }
+      }
+
+      &:hover {
+        background: $white;
+        transition: .3s ease;
+        svg {
+          path {
+            fill: $dark-mint;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 35px;
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &--item {
+      @include Text-Style-24;
+
+      &:hover {
+        @include Text-Style-24;
+        cursor: pointer;
+      }
+
+      margin-left: 45px;
+
+      :first-child {
+        margin-left: 0;
+      }
+
+      @include mobile {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &__copyright {
+    @include Text-Style-25;
+    padding-bottom: 45px;
+  }
+}

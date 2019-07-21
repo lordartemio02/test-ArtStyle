@@ -1,0 +1,129 @@
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
+@import "./fonts.scss";
+
+.form-popular {
+  background: url(./images/bg-beacons.png);
+  background-size: cover;
+  position: relative;
+
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__content {
+    &--item {
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+    }
+  }
+
+  &__wall {
+
+    height: calc(100% + 24px);
+    position: absolute;
+    right: 0;
+    top: -24px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet-only {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include Text-Style-18;
+    padding-top: 48px;
+  }
+
+  &__steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 39px;
+
+    &--item {
+      margin-left: 40px;
+
+      border: 1px solid transparent;
+      @include mobile {
+        padding: 15px;
+        margin-left: 10px;
+      }
+      @include tablet {
+        padding: 15px 34px;
+      }
+      @include Text-Style-19;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.current {
+        box-shadow: 0px 15px 29px 0 rgba(60, 171, 112, 0.63);
+        background-color: $white;
+        border-radius: 23px;
+
+      }
+    }
+
+  }
+
+  &__description {
+    @include Text-Style-20;
+    max-width: 900px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 655px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    border-radius: 26px;
+    margin-top: 27px;
+    height: 55px;
+    padding-left: 40px;
+    border: solid 3px $white;
+    background-color: rgb(255, 255, 255, 0.5);
+    @include Text-Style-20;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $black;
+      opacity: 1; /* Firefox */
+    }
+  }
+
+  &__submit {
+    border-radius: 28px;
+    box-shadow: 0px 15px 29px 0 rgba(60, 171, 112, 0.63);
+    background-color: $white;
+    padding: 0 63px;
+    height: 56px;
+    max-width: 207px;
+    margin: 38px auto 46px;
+    @include Text-Style-21;
+    text-transform: uppercase;
+
+  }
+}
